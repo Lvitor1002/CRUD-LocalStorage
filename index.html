@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CRUD</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="celular.css">
+
+  <script type="module" src="index.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+  <div class="controle">
+    <div class="cabecalho">
+
+      <span>Cadastro de Funcionários</span>
+      
+      <button id="btnIncluir" >Incluir</button>
+
+    </div>
+
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <!-- <th> (table header) é usada para definir células de cabeçalho -->
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Salário</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Nova linha contendo os dados-->
+        </tbody>
+
+      </table>
+    </div>
+
+    <div id="idFlex" class="flex ocultar">
+      <button type="button" id="idBtnFecharForm" class="bi bi-x-lg btnFecharForm"></button>
+      <div class="janelaExtra">
+        <form id="idFormulario">
+          <label for="idNome">Nome</label>
+          <input id="idNome" type="text"/>
+  
+          <label for="idFuncao">Função</label>
+          <input id="idFuncao" type="text"/>
+  
+          <label for="idSalario">Salário</label>
+          <input 
+            id="idSalario" 
+            step="0.01" 
+            type="text"
+            lang="pt-BR" 
+            placeholder="Ex: 2.500,75"/>
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  
+  
+</body>
+
+</html>

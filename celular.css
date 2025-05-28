@@ -1,0 +1,42 @@
+@media (max-width: 700px) {
+    body {
+      font-size: 10px;
+    }
+    
+    .cabecalho span {
+      font-size: 15px;
+    }
+  
+    #btnIncluir {
+      padding: 5px;
+      font-size: 10px;
+    }
+  
+    thead tr th.acao {
+      width: auto!important;
+    }
+    
+    td button i {
+      font-size: 20px!important;
+    }
+  
+    td button i:first-child {
+      margin-right: 0;
+    }
+  
+    .janelaExtra {
+      width: 90%!important;
+    }
+  
+    .janelaExtra label {
+      font-size: 12px!important;
+    }
+    .edita{
+      font-size: 1.1rem;
+      margin-left: 35%;
+    }
+    .remove{
+      font-size: 1.1rem;
+      margin-left: 35%;
+    }
+  }
